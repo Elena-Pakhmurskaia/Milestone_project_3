@@ -12,7 +12,7 @@ def index():
 
 
 @app.route("/hot_locations")
-def about():
+def hot_locations():
     return render_template("hot_locations.html")
 
 
