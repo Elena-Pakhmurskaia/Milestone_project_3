@@ -18,54 +18,30 @@
         </div>
     </div> 
             
-   {% for bird in birds %}    
+   {% for bird in birds %}   
+
+        <hr>
 
     <div class="row">
-      <div class="col-lg-4 col-sm-6 portfolio-item">
-        <div class="card h-100">
-          <a href="#"><img class="card-img-top" src="{{bird.image}}" alt=""></a>
-          <div class="card-body">
-          <h3>{{bird.name}}</h3>
-			<p class="card-text">{{bird.conservation}}</p>            
-                <h4 class="card-title">
-              <a href="#">Learn More</a>
-            </h4>
-          </div>
+        <div class="col-md-7">
+            <a href="#">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="{{bird.image}}" alt="">
+            </a>
         </div>
-      </div>
-      <div class="col-lg-4 col-sm-6 portfolio-item">
-        <div class="card h-100">
-          <a href="#"><img class="card-img-top" src="{{bird.image}}" alt=""></a>
-          <div class="card-body">
-          <h3>{{bird.name}}</h3>
-            <p class="card-text">{{bird.conservation}}</p>
-            <h4 class="card-title">
-              <a href="#">Learn More</a>
-            </h4>
-          </div>
+        <div class="col-md-5">
+            <h3>{{bird.name}}</h3>
+            <p>{{bird.short_description}}</p>
+            <a class="btn btn-primary" href="#">Learn More
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
         </div>
-      </div>
-      <div class="col-lg-4 col-sm-6 portfolio-item">
-        <div class="card h-100">
-          <a href="#"><img class="card-img-top" src="{{bird.image}}" alt=""></a>
-          <div class="card-body">
-          <h3>{{bird.name}}</h3>
-            <p class="card-text">{{bird.conservation}}</p>
-             <h4 class="card-title">
-              <a href="#">Learn More</a>
-            </h4>
-          </div>
-        </div>
-      </div>
     </div>
 
 {% endfor %}
-           
-            <hr>
 
 
 
-
+     <hr>
 
             <!-- Pager -->
             <div class="clearfix">
