@@ -7,7 +7,12 @@
                     Our Mission
                 </h2>
                 <p class="post-subtitle">
-                    Find out about endangered species in the Netherlands.
+                    Find out about endangered species in the Netherlands.Use the IUCN Red List of Endangered Species (IUCN) guidance to see which birds need your immediate attention.
+            <p>-Critically Endangered (CR-IUCN)</p>
+            <p>-Endangered (EN-IUCN)</p>
+            <p>-Extinct in the Wild (EW-IUCN)</p>
+            <p>-Vulnerable (VU-IUCN)</p>
+            <p>-Near Threatened (NT-IUCN)</p>
                 </p>
             </div>
         </div>
@@ -30,10 +35,10 @@
       </div>
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <div class="card h-100">
-          <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+          <a href="#"><img class="card-img-top" src="{{bird.image}}" alt=""></a>
           <div class="card-body">
-          <h3>Balearic Shearwater</h3>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+          <h3>{{bird.name}}</h3>
+            <p class="card-text">{{bird.conservation}}</p>
             <h4 class="card-title">
               <a href="#">Learn More</a>
             </h4>
@@ -42,49 +47,17 @@
       </div>
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <div class="card h-100">
-          <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+          <a href="#"><img class="card-img-top" src="{{bird.image}}" alt=""></a>
           <div class="card-body">
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quisquam, error quod sed cumque, odio distinctio velit nostrum temporibus necessitatibus et facere atque iure perspiciatis mollitia recusandae vero vel quam!</p>
+          <h3>{{bird.name}}</h3>
+            <p class="card-text">{{bird.conservation}}</p>
              <h4 class="card-title">
               <a href="#">Learn More</a>
             </h4>
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-sm-6 portfolio-item">
-        <div class="card h-100">
-          <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-          <div class="card-body">
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-             <h4 class="card-title">
-              <a href="#">Learn More</a>
-            </h4>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-6 portfolio-item">
-        <div class="card h-100">
-          <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-          <div class="card-body">
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-             <h4 class="card-title">
-              <a href="#">Learn More</a>
-            </h4>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-6 portfolio-item">
-        <div class="card h-100">
-          <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-          <div class="card-body">
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque earum nostrum suscipit ducimus nihil provident, perferendis rem illo, voluptate atque, sit eius in voluptates, nemo repellat fugiat excepturi! Nemo, esse.</p>
-             <h4 class="card-title">
-              <a href="#">Learn More</a>
-            </h4>
-          </div>
-        </div>
-      </div>
-</div>
+    </div>
 
 {% endfor %}
            
