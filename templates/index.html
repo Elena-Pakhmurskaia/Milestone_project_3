@@ -13,20 +13,15 @@
         </div>
     </div> 
             
-            
-    <div class="row featurette">
+   {% for bird in birds %}    
+
+    <div class="row">
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <div class="card h-100">
-          <a href="#"><img class="card-img-top" src="https://i.pinimg.com/originals/cd/82/9a/cd829a3e58c1823057a934b6d8518c79.jpg" alt=""></a>
+          <a href="#"><img class="card-img-top" src="{{bird.image}}" alt=""></a>
           <div class="card-body">
-          <h3>Balearic Shearwater</h3>
-			<p class="card-text">The Balearic shearwater is considered critically endangered with extinction by the IUCN. Recent
-				models estimate a mean decrease of 7.4% per year and a mean extinction time of 40.4 years. This equates to an
-				ongoing decline of more than 80% over the next three generations (54 years). It is under severe
-				threat from the development of holiday resorts near its breeding sites. These can destroy or alter its natural
-				breeding habitat by, for example, producing light pollution around nesting colonies.Predation from introduced
-				animals such as cats and rats also cause problems.[citation needed] The discovery of yelkouan shearwaters in the
-				Menorcan colony suggests that hybridization may also pose a problem.</p>            
+          <h3>{{bird.name}}</h3>
+			<p class="card-text">{{bird.conservation}}</p>            
                 <h4 class="card-title">
               <a href="#">Learn More</a>
             </h4>
@@ -90,6 +85,8 @@
         </div>
       </div>
 </div>
+
+{% endfor %}
            
             <hr>
 
