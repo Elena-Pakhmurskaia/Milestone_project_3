@@ -1,0 +1,28 @@
+
+{% extends 'base.html' %} {% block content %}
+
+<div class="row">
+    <div class="col-md-5">
+        <img src="{{ endangered_bird.image }}" alt="Profile image for {{ endangered_bird.name }}" />
+    </div>
+    <div class="col-md-7">
+        <h2>{{ endangered_bird.name }}</h2>
+    </div>
+</div>
+
+
+<hr>
+
+    <div class="col-md-12">
+    <h3>Description</h3>
+        <p>{{ endangered_bird.description }}</p>
+    <h3>Habitat</h3>
+        <p>{{ endangered_bird.habitat }}</p>
+    <h3>Behaviour</h3>
+        <p>{{ endangered_bird.behaviour }}</p>
+    <h3>Conservation</h3>
+        <p>{{ endangered_bird.conservation }}</p>
+    </div>
+</div>
+
+{% endblock %}

@@ -15,9 +15,10 @@ def index():
     return render_template("index.html", page_title="Home", birds=data)
 
 
-@app.route("/<bird_name>")
-def endangared_bird(bird_name):
+@app.route('/index/<bird_name>')
+def about_bird(bird_name):
     bird = {}
+
     with open("data/birds.json", "r") as json_data:
         data = json.load(json_data)
         for obj in data: 
