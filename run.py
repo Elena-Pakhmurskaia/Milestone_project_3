@@ -11,11 +11,25 @@ def index():
     data = []
     with open("data/birds.json", "r") as json_data:
         data = json.load(json_data)
+
     return render_template("index.html", page_title="Home", birds=data)
+
+
+@app.route("/<bird_name>")
+def endangared_bird(bird_name):
+    bird = {}
+    with open("data/birds.json", "r") as json_data:
+        data = json.load(json_data)
+        for obj in data: 
+            if obj["url"] == bird_name:
+                bird = obj
+
+    return render_template("endangered_birds.html", endangered_bird=bird)
 
 
 @app.route("/hot_locations")
 def hot_locations():
+    
     return render_template("hot_locations.html")
 
 
